@@ -1,116 +1,118 @@
 /* Tablets and smaller desktops */
 @media (max-width: 1024px) {
-    .hero-text h1 {
-        font-size: 6em;
-    }
+  .hero-text h1 {
+    font-size: 6em;
+  }
 
-    .hero-image img {
-        height: 70vh;
-    }
+  .hero-image img {
+    height: 70vh;
+  }
 
-    .specialization {
-        max-width: 250px;
-        font-size: 1.1em;
-    }
+  .specialization {
+    max-width: 250px;
+    font-size: 1.1em;
+  }
 }
 
 /* Tablets and large phones */
 @media (max-width: 768px) {
-    .hero-text h1 {
-        font-size: 4em;
-    }
+  .hero-text h1 {
+    font-size: 4em;
+  }
 
-    .hero-image img {
-        height: 60vh;
-    }
+  .hero-image img {
+    height: 60vh;
+  }
 
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .specialization {
-        position: relative;
-        right: auto;
-        top: auto;
-        transform: none;
-        margin: 20px auto;
-        text-align: center;
-    }
+  .specialization {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    margin: 20px auto;
+    text-align: center;
+  }
 
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .contact-content {
-        grid-template-columns: 1fr;
-    }
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Small phones */
 @media (max-width: 480px) {
-    nav {
-        padding: 10px;
-    }
+  nav {
+    padding: 10px;
+  }
 
-    nav a {
-        font-size: 0.9em;
-        padding: 8px 12px;
-    }
+  nav a {
+    font-size: 0.9em;
+    padding: 8px 12px;
+  }
 
-    section {
-        padding: 60px 5%;
-    }
+  section {
+    padding: 60px 5%;
+  }
 
-    .hero-text h1 {
-        font-size: 3em;
-    }
+  .hero-text h1 {
+    font-size: 3em;
+  }
 
-    .section-title {
-        font-size: 2em;
-    }
+  .section-title {
+    font-size: 2em;
+  }
 }
 
 /* Resume section responsive styles */
 @media (max-width: 768px) {
-    .resume-tabs {
-        flex-wrap: wrap;
-        gap: 0.5rem;
-    }
+  .resume-tabs {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
 
-    .tab-btn {
-        padding: 0.5rem 1rem;
-        font-size: 0.9rem;
-    }
+  .tab-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
 
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
+  .timeline {
+    padding-left: 1rem;
+  }
 
-    .timeline {
-        padding-left: 1rem;
-    }
+  .education-card,
+  .experience-card,
+  .skill-category,
+  .leadership-card {
+    padding: 1rem;
+  }
+}
 
-    .education-card,
-    .experience-card,
-    .skill-category,
-    .leadership-card {
-        padding: 1rem;
-    }
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 480px) {
-    .resume-tabs {
-        flex-direction: column;
-        align-items: stretch;
-    }
+  .resume-tabs {
+    flex-direction: column;
+    align-items: stretch;
+  }
 
-    .tab-btn {
-        width: 100%;
-        text-align: center;
-    }
+  .tab-btn {
+    width: 100%;
+    text-align: center;
+  }
 
-    .timeline-item {
-        padding-left: 2rem;
-    }
+  .timeline-item {
+    padding-left: 2rem;
+  }
 }
