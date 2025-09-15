@@ -1,0 +1,174 @@
+/* Replace your existing resume grid styles with these: */
+
+.resume-content {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 20px;
+    opacity: 0;
+}
+
+.resume-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+/* Special container for skills and leadership to be side by side */
+.skills-leadership-container {
+    grid-column: 1 / -1; /* Span full width of the grid */
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.resume-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    min-height: 200px;
+}
+
+/* Skills card takes more space due to more content */
+.skills-card {
+    flex: 2;
+}
+
+/* Leadership card takes less space */
+.leadership-card {
+    flex: 1;
+}
+
+.resume-card:hover {
+    transform: scale(1.02);
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.resume-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2c363f;
+}
+
+.card-content {
+    opacity: 0.7;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.resume-card:hover .card-content {
+    opacity: 1;
+    max-height: 1000px; /* Adjust based on content */
+}
+
+/* Specific section styles */
+.education-details,
+.experience-item,
+.skills-grid,
+.leadership-details {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Skills grid within the skills card */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.skill-category {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.skills-tags span {
+    background: rgba(219, 193, 176, 0.3);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    color: #2c363f;
+}
+
+/* Leadership specific styles */
+.leadership-details h4 {
+    color: #2c363f;
+    margin-bottom: 1rem;
+}
+
+.leadership-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.leadership-details li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.leadership-details li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #2c363f;
+    font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .resume-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    .skills-leadership-container {
+        flex-direction: column;
+    }
+    
+    .skills-card,
+    .leadership-card {
+        flex: 1;
+    }
+
+    .resume-card {
+        min-height: 150px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .resume-content {
+        padding: 20px;
+    }
+    
+    .skills-leadership-container {
+        gap: 1rem;
+    }
+    
+    .resume-card {
+        padding: 1rem;
+        min-height: 120px;
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "dev": "live-server --port=3000",
+    "format": "prettier --write \"**/*.{js,css,html}\"",
+    "lint": "eslint \"**/*.js\"",
+    "build": "echo \"No build step required\""
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "personal"
+  ],
+  "author": "Gagan Sran",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "live-server": "^1.2.0",
+    "prettier": "^3.2.5"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5"
+  }
+}
